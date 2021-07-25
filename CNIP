@@ -4,6 +4,7 @@
 # Last Generated: 25 Jul 2021 19:29:00 GMT
 # [Important] Please update this list every month
 # -------------------------------------------------------add address=1.0.1.0/24 comment="China" list=IP2Location
+/ip firewall address-list
 add address=1.0.2.0/23 comment="China" list=IP2Location
 add address=1.0.8.0/21 comment="China" list=IP2Location
 add address=1.0.32.0/19 comment="China" list=IP2Location
