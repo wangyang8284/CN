@@ -370,7 +370,6 @@ add address=43.224.240.0/22 comment="China" list=IP2Location
 add address=43.225.76.0/22 comment="China" list=IP2Location
 add address=43.225.84.0/22 comment="China" list=IP2Location
 add address=43.225.120.0/21 comment="China" list=IP2Location
-add address=43.225.174.0/23 comment="China" list=IP2Location
 add address=43.225.180.0/22 comment="China" list=IP2Location
 add address=43.225.208.0/22 comment="China" list=IP2Location
 add address=43.225.216.0/21 comment="China" list=IP2Location
@@ -905,7 +904,7 @@ add address=46.248.139.192/29 comment="China" list=IP2Location
 add address=47.89.0.0/24 comment="China" list=IP2Location
 add address=47.89.2.0/24 comment="China" list=IP2Location
 add address=47.89.5.0/24 comment="China" list=IP2Location
-add address=47.89.8.0/24 comment="China" list=IP2Location
+add address=47.89.8.0/23 comment="China" list=IP2Location
 add address=47.89.12.0/23 comment="China" list=IP2Location
 add address=47.89.14.0/24 comment="China" list=IP2Location
 add address=47.89.17.0/24 comment="China" list=IP2Location
@@ -1040,8 +1039,6 @@ add address=59.108.0.0/14 comment="China" list=IP2Location
 add address=59.148.19.142/32 comment="China" list=IP2Location
 add address=59.151.0.0/17 comment="China" list=IP2Location
 add address=59.152.16.0/20 comment="China" list=IP2Location
-add address=59.152.32.0/23 comment="China" list=IP2Location
-add address=59.152.34.0/24 comment="China" list=IP2Location
 add address=59.152.36.0/22 comment="China" list=IP2Location
 add address=59.152.47.64/27 comment="China" list=IP2Location
 add address=59.152.64.0/20 comment="China" list=IP2Location
@@ -1109,6 +1106,7 @@ add address=62.159.220.80/28 comment="China" list=IP2Location
 add address=62.159.220.104/29 comment="China" list=IP2Location
 add address=62.208.224.85/32 comment="China" list=IP2Location
 add address=62.225.14.176/29 comment="China" list=IP2Location
+add address=62.225.14.208/29 comment="China" list=IP2Location
 add address=62.234.0.0/16 comment="China" list=IP2Location
 add address=63.146.79.8/29 comment="China" list=IP2Location
 add address=63.150.110.248/29 comment="China" list=IP2Location
@@ -1129,6 +1127,7 @@ add address=64.138.12.120/29 comment="China" list=IP2Location
 add address=64.138.13.240/28 comment="China" list=IP2Location
 add address=64.138.14.224/27 comment="China" list=IP2Location
 add address=64.138.144.0/29 comment="China" list=IP2Location
+add address=64.235.230.152/30 comment="China" list=IP2Location
 add address=64.235.249.232/29 comment="China" list=IP2Location
 add address=64.235.250.16/29 comment="China" list=IP2Location
 add address=64.235.250.28/30 comment="China" list=IP2Location
@@ -1773,8 +1772,6 @@ add address=103.44.56.0/22 comment="China" list=IP2Location
 add address=103.44.80.0/22 comment="China" list=IP2Location
 add address=103.44.88.0/22 comment="China" list=IP2Location
 add address=103.44.120.0/21 comment="China" list=IP2Location
-add address=103.44.132.0/24 comment="China" list=IP2Location
-add address=103.44.134.0/23 comment="China" list=IP2Location
 add address=103.44.144.0/22 comment="China" list=IP2Location
 add address=103.44.168.0/22 comment="China" list=IP2Location
 add address=103.44.176.0/20 comment="China" list=IP2Location
@@ -2854,6 +2851,10 @@ add address=103.183.122.0/23 comment="China" list=IP2Location
 add address=103.183.124.0/23 comment="China" list=IP2Location
 add address=103.184.44.0/22 comment="China" list=IP2Location
 add address=103.184.60.0/23 comment="China" list=IP2Location
+add address=103.185.78.0/23 comment="China" list=IP2Location
+add address=103.185.80.0/23 comment="China" list=IP2Location
+add address=103.185.228.0/23 comment="China" list=IP2Location
+add address=103.186.4.0/23 comment="China" list=IP2Location
 add address=103.192.0.0/19 comment="China" list=IP2Location
 add address=103.192.48.0/21 comment="China" list=IP2Location
 add address=103.192.56.0/22 comment="China" list=IP2Location
@@ -5141,9 +5142,12 @@ add address=195.192.242.244/30 comment="China" list=IP2Location
 add address=195.192.242.248/30 comment="China" list=IP2Location
 add address=195.192.242.252/31 comment="China" list=IP2Location
 add address=195.192.242.254/32 comment="China" list=IP2Location
+add address=198.11.132.0/24 comment="China" list=IP2Location
 add address=198.11.137.0/24 comment="China" list=IP2Location
 add address=198.11.142.0/23 comment="China" list=IP2Location
+add address=198.11.148.0/24 comment="China" list=IP2Location
 add address=198.11.154.0/24 comment="China" list=IP2Location
+add address=198.11.186.0/23 comment="China" list=IP2Location
 add address=198.11.188.0/22 comment="China" list=IP2Location
 add address=198.23.221.76/30 comment="China" list=IP2Location
 add address=198.23.242.0/28 comment="China" list=IP2Location
