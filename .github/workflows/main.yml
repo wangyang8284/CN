@@ -1,0 +1,44 @@
+name: Build PBR
+
+on:
+  schedule:
+    - cron: "0 16 * * 0"  # 北京时间周一00:00（UTC周日16:00）
+  # workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    
+    - name: Generate IP2Location list
+      run: |
+        chmod +x ros-dpbr.sh
+        ./ros-dpbr.sh
+        
+    - name: Commit & Push changes
+      run: |
+        # 删除旧的 CN.rsc 文件（如果有的话）
+        rm -f CN.rsc
+        
+        # 提交新的 CNIP.rsc 文件
+        git add CNIP.rsc
+        
+        # 如果有旧的 CN.rsc 被删除，也提交这个删除
+        if git status --porcelain | grep -q '^ D.*CN\.rsc'; then
+          git rm CN.rsc
+        fi
+        
+        # 提交更改
+        git commit -m "update: CNIP.rsc - $(date +'%Y-%m-%d %H:%M:%S')" || echo "没有更改需要提交"
+        
+        # 推送更改
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
