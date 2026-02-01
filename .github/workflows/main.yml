@@ -3,7 +3,7 @@ name: Build PBR
 on:
   schedule:
     - cron: '0 16 * * 0'  # 北京时间周一00:00（UTC周日16:00）
-  #workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   build:
