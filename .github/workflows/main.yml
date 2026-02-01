@@ -3,7 +3,7 @@ name: Build PBR
 on:
   schedule:
     - cron: '0 16 * * 0'  # 北京时间周一00:00（UTC周日16:00）
-  workflow_dispatch:
+  #workflow_dispatch:
 
 jobs:
   build:
@@ -25,14 +25,14 @@ jobs:
     - name: Commit & Push changes
       run: |
         # 删除旧的 CN.rsc 文件（如果有的话）
-        rm -f CNIP.rsc
+        rm -f CN.rsc
         
         # 提交新的 CNIP.rsc 文件
         git add CNIP.rsc
         
-        # 如果有旧的 CNIP.rsc 被删除，也提交这个删除
-        if git status --porcelain | grep -q '^ D.*CNIP\.rsc'; then
-          git rm CNIP.rsc
+        # 如果有旧的 CN.rsc 被删除，也提交这个删除
+        if git status --porcelain | grep -q '^ D.*CN\.rsc'; then
+          git rm CN.rsc
         fi
         
         # 提交更改
