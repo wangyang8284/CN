@@ -2,7 +2,7 @@ name: CNIP
 
 on:
   schedule:
-    - cron: '0 17 * * 0'  # 北京时间周一01:00（UTC周日17:00）
+    - cron: '0 18 * * *'  # 北京时间周一02:00（UTC周日18:00）
   workflow_dispatch:
 
 jobs:
