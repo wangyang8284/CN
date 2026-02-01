@@ -22,23 +22,23 @@ jobs:
         chmod +x ros-dpbr.sh
         ./ros-dpbr.sh
         
-    - name: Commit & Push changes
-      run: |
+    # - name: Commit & Push changes
+    #  run: |
         # 删除旧的 CN.rsc 文件（如果有的话）
-        rm -f CNIP.rsc
+    #    rm -f CNIP.rsc
         
         # 提交新的 CNIP.rsc 文件
-        git add CNIP.rsc
+    #    git add CNIP.rsc
         
         # 如果有旧的 CNIP.rsc 被删除，也提交这个删除
-        if git status --porcelain | grep -q '^ D.*CNIP\.rsc'; then
-          git rm CNIP.rsc
-        fi
+    #    if git status --porcelain | grep -q '^ D.*CNIP\.rsc'; then
+    #      git rm CNIP.rsc
+    #    fi
         
         # 提交更改
-        git commit -m "update: CNIP.rsc - $(date +'%Y-%m-%d %H:%M:%S')" || echo "没有更改需要提交"
+    #    git commit -m "update: CNIP.rsc - $(date +'%Y-%m-%d %H:%M:%S')" || echo "没有更改需要提交"
         
         # 推送更改
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #    git push
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
