@@ -1,4 +1,4 @@
-北京时间每天02:00更新CNIP，Router OS 脚本如下，可将IP地址导入路由器：
+北京时间每天00:00更新CNIP，Router OS 脚本如下，可将IP地址导入路由器：
 
 /tool fetch url=https://raw.githubusercontent.com/wangyang8284/CN/refs/heads/main/CNIP.rsc dst-path=CNIP.rsc
 
