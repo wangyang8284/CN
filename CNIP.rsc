@@ -1,5 +1,5 @@
 # 中国IP地址列表
-# 生成时间（北京时间）: 2026-06-11 02:29:22 CST
+# 生成时间（北京时间）: 2026-06-12 02:45:25 CST
 /ip firewall address-list
 add address=1.0.1.0/24 comment="China" list=IP2Location 
 add address=1.0.2.0/23 comment="China" list=IP2Location 
