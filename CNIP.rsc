@@ -1,5 +1,5 @@
 # 中国IP地址列表
-# 生成时间（北京时间）: 2026-10-26 02:43:31 CST
+# 生成时间（北京时间）: 2026-10-27 04:53:18 CST
 /ip firewall address-list
 add address=1.0.1.0/24 comment="China" list=IP2Location 
 add address=1.0.2.0/23 comment="China" list=IP2Location 
@@ -3457,7 +3457,6 @@ add address=103.97.188.0/22 comment="China" list=IP2Location
 add address=103.97.192.0/22 comment="China" list=IP2Location 
 add address=103.97.228.0/23 comment="China" list=IP2Location 
 add address=103.98.0.0/23 comment="China" list=IP2Location 
-add address=103.98.28.0/23 comment="China" list=IP2Location 
 add address=103.98.40.0/22 comment="China" list=IP2Location 
 add address=103.98.44.0/22 comment="China" list=IP2Location 
 add address=103.98.48.0/22 comment="China" list=IP2Location 
@@ -3667,7 +3666,6 @@ add address=103.116.128.0/22 comment="China" list=IP2Location
 add address=103.116.138.0/23 comment="China" list=IP2Location 
 add address=103.116.148.0/22 comment="China" list=IP2Location 
 add address=103.116.184.0/22 comment="China" list=IP2Location 
-add address=103.116.206.0/23 comment="China" list=IP2Location 
 add address=103.116.220.0/22 comment="China" list=IP2Location 
 add address=103.116.224.0/22 comment="China" list=IP2Location 
 add address=103.116.228.0/22 comment="China" list=IP2Location 
